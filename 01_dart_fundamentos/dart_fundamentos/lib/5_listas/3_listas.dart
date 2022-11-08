@@ -96,7 +96,7 @@ void main() {
   ];
 
   print(listaString);
-  var string = listaString.join('->');
+  var string = listaString.join(' -> ');
   print(string);
 
 }
