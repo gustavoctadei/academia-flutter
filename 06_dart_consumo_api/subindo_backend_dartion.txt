@@ -1,0 +1,12 @@
+1 - Instalando e ativando o dartion
+	$ fvm dart pub global activate dartion
+
+2 - Dentro do diretorio raiz do projeto, crie um diretorio chamado 'backend' e entre nele
+	$ mkdir backend
+	$ cd ./backend
+
+3 - Criar a estrutura do dartion
+	$ dartion init
+
+4 - Subir o dartion
+	$ dartion serve
