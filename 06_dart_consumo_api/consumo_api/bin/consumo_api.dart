@@ -1,8 +1,18 @@
 import 'dart:convert';
 
-import 'package:consumo_api/consumo_api.dart' as consumo_api;
+// import 'package:consumo_api/consumo_api.dart' as consumo_api;
+import 'package:consumo_api/controller/alunos_controller.dart';
+import 'package:consumo_api/models/telefone.dart';
 
-void main(List<String> arguments) {
+void main() {
+  // AlunosController().findAll();
+  // AlunosController().findById('2');
+  // AlunosController().update();
+  // AlunosController().insert();
+  AlunosController().findById('91080680-71f2-11ed-91bc-fb69e9e0bcbe');
+}
+
+void main2(List<String> arguments) {
   String cidadeJson = '''
     {
       "id": 1,
@@ -55,4 +65,19 @@ void main(List<String> arguments) {
 
   print(json.encode(cidadeMapJson));
   print(json.encode([cidadeMapJson]));
+
+  final telefoneJson = '''
+    {
+      "ddd": 11,
+      "telefone": "999999999"
+    }
+    ''';
+
+    final telefone = Telefone.fromJson(telefoneJson);
+
+    print(telefone.ddd);
+    print(telefone.telefone);
+
+    print(telefone.toJson());
+    print(telefone.toMap());
 }
