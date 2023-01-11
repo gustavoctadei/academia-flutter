@@ -1,0 +1,42 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('HomePage'),
+      ),
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          margin: EdgeInsets.all(10),
+          //margin: EdgeInsets.only(left: 10, top: 10),
+          //margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          //margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black,
+                blurRadius: 20,
+                offset: Offset(10, 10),
+              ),
+              BoxShadow(
+                color: Colors.green,
+                blurRadius: 20,
+                offset: Offset(-10, -10),
+              ),
+            ],
+          ),
+          //color: Colors.red, // Deve estar dentro do BoxDecoration, se o mesmo existir
+        ),
+      ),
+    );
+  }
+}
