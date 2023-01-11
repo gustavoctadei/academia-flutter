@@ -1,0 +1,4 @@
+flutter create --project-name=NOME_PROJETO --org ORGANIZACAO --platforms android,ios -a kotlin -i swift ./NOME_PROJETO
+
+Exemplo:
+flutter create --project-name=flutter_primeiros_passos --org br.com.academiadoflutter --platforms android,ios -a kotlin -i swift ./flutter_primeiros_passos
